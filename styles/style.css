@@ -211,8 +211,12 @@ dialog[open] {
   margin: auto;
 }
 
-dialog[open] .main_button_ok {
+dialog[open] .form {
   grid-column: 1 / 3;
+}
+
+dialog[open] .main_button_ok {
+  inline-size: 100%;
 }
 
 dialog::backdrop {
