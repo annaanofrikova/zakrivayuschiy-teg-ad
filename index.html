@@ -381,7 +381,7 @@
           </div>
         </div>
       </section>
-      <button type="button" class="main_button_save button" onclick="window['dialog'].showModal()" aria-controls="dialog">
+      <button type="button" class="main_button_save button" onclick="window['dialog'].showModal(); return false;" aria-controls="dialog">
         <svg width="28px" height="28px" viewBox="0 0 30 28"
              class="floppy-icon">
           <use href="/svg/floppymini.svg#floppymini"/>
@@ -399,7 +399,7 @@
           Вставьте
           дискету, чтобы продолжить
         </span>
-        <button type="button" class="main_button_ok button" onclick="window['dialog'].close()">
+        <button type="button" class="main_button_ok button" onclick="window['dialog'].close(); return false;">
           <span class="button__text">
             OK
           </span>
