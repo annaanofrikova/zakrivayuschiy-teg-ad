@@ -381,10 +381,7 @@
           </div>
         </div>
       </section>
-      <button type="button"
-              class="main_button_save button"
-              onclick="window['save'].showModal()"
-              aria-controls="save">
+      <button type="button" class="main_button_save button" onclick="window['dialog'].showModal()" aria-controls="dialog">
         <svg width="28px" height="28px" viewBox="0 0 30 28"
              class="floppy-icon">
           <use href="/svg/floppymini.svg#floppymini"/>
@@ -393,7 +390,7 @@
           Сохранить на память
         </span>
       </button>
-      <dialog id="save">
+      <dialog id="dialog">
         <svg width="39px" height="39px"
              class="dialog-floppy-icon">
           <use href="/svg/floppy.svg#floppy"/>
@@ -402,13 +399,11 @@
           Вставьте
           дискету, чтобы продолжить
         </span>
-        <form method="dialog" class="form">
-          <button class="main_button_ok button">
-            <span class="button__text">
-              OK
-            </span>
-          </button>
-        </form>
+        <button type="button" class="main_button_ok button" onclick="window['dialog'].close()">
+          <span class="button__text">
+            OK
+          </span>
+        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
