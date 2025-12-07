@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family, sans-serif);
-  font-variation-settings: 'wght' var(--card-text-weight);
+  font-variation-settings: "wght" var(--card-text-weight);
   font-size: 18px;
   background-image: var(--background-gradient);
   background-attachment: fixed;
@@ -57,7 +57,6 @@
   transition: box-shadow 0.3s ease;
 }
 
-
 .button__text {
   font-family: var(--accent-font-family);
   font-size: 14px;
@@ -78,20 +77,21 @@
 }
 
 .main_card_title {
-  font-variation-settings: 'wght' var(--card-title-weight);
+  font-variation-settings: "wght" var(--card-title-weight);
   border: 2px solid #000;
   border-bottom: none;
   padding: 0 10px;
 }
 
 .main_image_container {
+  inline-size: 100%;
   position: relative;
 }
 
 .main_image_label {
   position: absolute;
   top: 25px;
-  right: clamp(13px, 13px + 0.0113 * 100vw  - 4.2254px, 25px);
+  right: clamp(13px, 13px + 0.0113 * 100vw - 4.2254px, 25px);
   mix-blend-mode: hard-light;
   font-family: var(--accent-font-family);
   font-size: 14px;
@@ -99,16 +99,15 @@
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--stroke-color)) or
+    (-webkit-text-stroke: 1px var(--stroke-color))
+) {
   .main_image_label {
     -webkit-text-stroke: 1px var(--stroke-color);
     text-stroke: 1px var(--stroke-color);
     text-shadow: none;
   }
-}
-
-.main_image_container{
-  inline-size: 100%;
 }
 
 .main_image {
@@ -141,7 +140,7 @@
   justify-content: end;
 }
 
-.card__icon-button{
+.card__icon-button {
   background-color: #fff;
   border: none;
   transition: outline 0.3s ease;
@@ -169,7 +168,7 @@
   white-space: nowrap;
 }
 
-.image1{
+.image1 {
   filter: brightness(200%);
 }
 
@@ -193,12 +192,12 @@
   filter: saturate(200%);
 }
 
-.image7  {
+.image7 {
   filter: hue-rotate(90deg);
 }
 
 .image8 {
-  filter: sepia(100%) hue-rotate(90deg); 
+  filter: sepia(100%) hue-rotate(90deg);
 }
 
 dialog[open] {
@@ -220,7 +219,7 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.button:focus{
+.button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
 }
@@ -250,13 +249,12 @@ dialog::backdrop {
   outline: 2px solid #000;
 }
 
-
 @media (width <= 375px) {
-  :root{
+  :root {
     --button-save-size: 306px;
     --dialog-size: 341px;
   }
-  .main_button_save{
+  .main_button_save {
     flex-direction: column;
   }
   dialog[open] {

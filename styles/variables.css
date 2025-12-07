@@ -1,32 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --page-content-width: clamp(320px, 100%, 700px);
-    --main-font-family: 'Inter';
-    --accent-font-family: 'PressStart2P';
-    --card-text-weight: 400;
-    --card-title-weight: 700;
-    
-    --header-logo-font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
-    --header-title-font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
-    --header-padding: clamp(120px, 120px + 0.0075 * 100% - 2.8169px, 128px)
-                       clamp(14px, 14px + 0.1 * 100% - 37.5px, 120.5px);
-                    
-   --stroke-color: rgb(255 255 255 / 0.5);
-   --button-save-size: 340px;
-   --button-text-color: #fff;
-   --background-gradient: repeating-linear-gradient(
-            to right, 
-            #d3d3d3 0 2px, 
-            transparent 2px 4px), 
-        repeating-linear-gradient(
-            to bottom,
-            #d3d3d3 0 2px, 
-            transparent 2px 4px), 
-        repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --page-content-width: clamp(320px, 100%, 700px);
+  --main-font-family: "Inter";
+  --accent-font-family: "PressStart2P";
+  --card-text-weight: 400;
+  --card-title-weight: 700;
 
-    --dialog-size: 353px;
+  --header-logo-font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  --header-title-font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  --header-padding: clamp(120px, 120px + 0.0075 * 100% - 2.8169px, 128px)
+    clamp(14px, 14px + 0.1 * 100% - 37.5px, 120.5px);
 
-    --contour-color: #000;
-    --animation-fill-color: red;
+  --stroke-color: rgb(255 255 255 / 0.5);
+  --button-save-size: 340px;
+  --button-text-color: #fff;
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+  --dialog-size: 353px;
+
+  --contour-color: #000;
+  --animation-fill-color: red;
 }
