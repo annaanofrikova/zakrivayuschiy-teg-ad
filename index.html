@@ -383,7 +383,7 @@
       </section>
       <button class="main_button_save button"
               type="button"
-              onclick="window['save'].showModal()"
+              onclick="event.preventDefault(); window['save'].showModal()"
               aria-controls="save">
         <svg width="28px" height="28px" viewBox="0 0 30 28"
              class="floppy-icon">
@@ -404,7 +404,7 @@
         </span>
         <button class="main_button_ok button"
                 type="button"
-                onclick="window['save'].close()">
+                onclick="event.preventDefault(); window['save'].close()">
           <span class="button__text">
             OK
           </span>
